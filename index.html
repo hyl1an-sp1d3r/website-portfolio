@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Etienne Cuero</title>
+  <script src="https://kit.fontawesome.com/2575e64785.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <img>
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#my-services">My Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software Developer</p>
+        <h1>Hello!<br> My name is <span>Etienne</span> I am Texas resident with <br> the ambition of becoming a software
+          developer!</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/IMG_8071.PNG">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello to all who visit this site! <br> My name is Etienne Cuero, and I am a
+            college gradutate with a Bachelor's in Computer Science. I also have experience
+            in customer service and data entry. On this website, you can view the
+            projects I worked with within my college career, my GitHub and LinkedIn, as well
+            as my work experience, skills and interests. Feel free to check all in what I have to
+            offer!</p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>2019 - 2023</span><br>Bachelor of Science in Computer Science</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>2019 - Present</span><br>C++</li>
+              <li><span>2021 - Present</span><br>Java</li>
+              <li><span>2022 - Present</span><br>HTML/CSS</li>
+              <li><span>2022 - Present</span><br>JavaScript</li>
+              <li><span>2023 - Present</span><br>React + Node.js</li>
+              <li><span>2023 - Present</span><br>Python</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Jun 2022 - Jul 2022</span><br>Camp Counselor at Texas Advanced Computing Center (TACC)</li>
+              <li><span>Oct 2023 - Dec 2023</span><br> Seasonal Guest Advisor at GameStop</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="my-services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="list-of-services">
+        <div>
+          <i class="fa-solid fa-bell-concierge"></i>
+          <h2>Customer Services</h2>
+          <p>Can easily build rapport with a very strong work ethic</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Programmed multiple projects in and out of college</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bug"></i>
+          <h2>Debugging</h2>
+          <p>Can quickly identify and correct bugs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title"></h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="images/Results.jpg">
+          <div class="layer">
+            <h3>Same Fight Card Game</h3>
+            <p>A card game that plays with two teams (odd and even) that plays for two rounds
+              and saves the results in a text file</p>
+            <a href="sf.html"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/ER.jpg">
+          <div class="layer">
+            <h3>Video Game Database</h3>
+            <p>Mock database for information on video games</p>
+            <a href="vgd.html"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more!</a>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>etienne.cuero@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>5127994543</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/encs19/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100010389887469"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/etiennecuero/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/Cuero_Etienne Resume_2024.pdf" download class="btn btn2">Download Resume/CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright Etienne. Made on Replit with <i class="fas fa-heart"></i></p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-links");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-CO7Lk7z1FSwjCZA7jvc2yVK3jNWai0ljV32CUhsPByTbIuPXQwOMW5Xt26wyqztKog/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
